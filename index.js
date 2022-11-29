@@ -1,7 +1,12 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const {data} =  require('./dataModel.js')
+const cors = require('cors');
+const {data} =  require('./dataModel.js');
 const app = express();
+
+
+app.use(cors());
+
 
 
 const MongoDBURI = "mongodb+srv://Ashish177:1234@cluster0.ihbzate.mongodb.net/?retryWrites=true&w=majority";
